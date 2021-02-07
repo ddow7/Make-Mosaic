@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    width : 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#museum{
+    display: flex;
+    width : 100vw;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#originalImage{
+    display: flex;
+    width : 50vw;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mosaicImage{
+    display: flex;
+    width : 50vw;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#uploadButton{
+    height: 10vh;
+}
