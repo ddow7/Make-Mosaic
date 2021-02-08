@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body{
+    background-image: url('back1.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .content{
     display: flex;
-    width : 100vw;
-    height: 100vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -14,31 +19,48 @@
 
 #museum{
     display: flex;
-    width : 100vw;
-    height: 90vh;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #originalImage{
     display: flex;
     width : 50vw;
-    height: 80vh;
-    flex-direction: row;
+    height: 90vh;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 #mosaicImage{
-    display: flex;
+    display: none;
     width : 50vw;
-    height: 80vh;
-    flex-direction: row;
+    height: 90vh;
     justify-content: space-around;
     align-items: center;
 }
 
 #uploadButton{
+    display: flex;
+    width : 100vw;
     height: 10vh;
+    background-color: slategrey;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#image_container img{
+    border:14px ridge rgb(90, 47, 23);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+canvas{
+    border:14px ridge rgb(90, 47, 23);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+.input-file-button{
+    padding: 6px 25px;
+    background-color:#1d2847;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
 }

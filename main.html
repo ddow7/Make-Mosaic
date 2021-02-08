@@ -20,7 +20,10 @@
                 </div>
             </div>
             <div id="uploadButton">
-                <input type="file" id="image" accept="image/*" onchange="makeMosaic(event);" />
+                <label class="input-file-button" for="file-button">
+                    Find Image
+                </label>
+                <input type="file" id="file-button" accept="image/*" onchange="makeMosaic(event);" style="display:none" />
             </div>
         </div>
     </body>

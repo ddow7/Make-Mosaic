@@ -17,9 +17,10 @@ function makeMosaic(event){
         let img = document.createElement("img");
         img.setAttribute("src",event.target.result);
         img.setAttribute("id","targetImage");
-        img.setAttribute("width","500px");
+        img.setAttribute("width","400px");
         document.querySelector("div#image_container").appendChild(img);
         img.onload = function(){
+            document.getElementById("mosaicImage").style.display = "flex";
             let canvas = document.getElementById("canvas");
             let ctx = canvas.getContext("2d");
             let width = img.naturalWidth;
